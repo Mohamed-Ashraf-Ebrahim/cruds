@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project cruds</title>
+  	<meta charset="utf-8">
+ 
+  	<link rel="stylesheet"  href="./2.css" />
+	<style>
+	</style>
+  </head>
+  <body >
+	<img src="٢٠٢٣٠٢١٥_١٦٣٥٠١.jpg" id="img" onclick="my()">
+	<div id="mee" class="me">
+		<pre style="color:yellow;"><strong style="color: red;">Mohamed</strong> Ashraf Ebrahim</pre>
+
+	</div>
+
+<div class="crud">
+	<div class="head">
+		<h2>phones</h2>
+		<p>product mangement system</p>
+	</div>
+	<div class="input">
+<input type="text" id="title" placeholder="title">
+<div class="price">
+	<input onkeyup=gettotal() type="number" id="price" placeholder="price">
+	<input onkeyup=gettotal() type="number" id="taxes" placeholder="taxes">
+	<input onkeyup=gettotal() type="number" id="ads" placeholder="ads">
+	<input onkeyup=gettotal() type="number" id="discount" placeholder="discount">
+	<small id="total"></small>
+</div>
+<input type="number" id="count" placeholder="count">
+<input type="text" id="catogry" placeholder="catogry">
+	</div>
+	<button id="submit">ctreat</button>
+	<div class="output">
+		<div class="searchblock">
+			<input onkeyup="searchdata(this.value)" id="search5" placeholder="search here" type="text">
+		<div class="btnsearch">
+			<button onclick="searchmood(this.id)" id="searchtitle">search by title</button>
+			<button onclick="searchmood(this.id)" id="searchcatogary">search by catogry</button>
+		</div>
+		</div>
+		
+	</div>
+<div id="deletall">
+	<button onclick="deletALL()">delet all</button>
+</div>
+<table>
+	<th>
+		<tr>
+			<th>ID</th>
+			<th>TITLE</th>
+			<th>PRICE</th>
+			<th>TAXES</th>
+			<th>ADS</th>
+			<th>DISCOUNT</th>
+			<th>TOTAL</th>
+			<th>CATOGARY</th>
+			<th>UPDATE</th>
+			<th>DELETE</th>
+		</tr>
+	</th>
+	<tbody id="tbody">
+		
+	</tbody>
+</table>
+</div>
+<div id="scroll">^</div>
+</body>
+<script src="2.js"></script>
+
+</html>
